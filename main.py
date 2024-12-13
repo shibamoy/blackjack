@@ -1,7 +1,7 @@
 import random
 
 cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-playersum =[]
+player_sum =[]
 def pick_two(cards):
     return random.sample(cards, 2)
 
@@ -10,26 +10,26 @@ def pick_one(cards):
     
 
 
-def playerturn(playersum):
+def playerturn(player_sum):
     player = pick_two(cards)
-    playersum = sum(player)
+    player_sum = sum(player)
     while True:
-        choice = input(f"You have {playersum}, hit or stay? type y for hit, n for stay")
+        choice = input(f"You have {player_sum}, hit or stay? type y for hit, n for stay")
         if choice == "y":
             player += pick_one(cards)
-            playersum = sum(player)
-            print(playersum)
+            player_sum = sum(player)
+            print(player_sum)
 
         else:
-            print(playersum)
+            print(player_sum)
             break
-    print(playersum)
+    print(player_sum)
         
     
     
     
     
-playerturn(playersum)
+playerturn(player_sum)
 
 
    
