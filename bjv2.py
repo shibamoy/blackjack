@@ -17,7 +17,11 @@ def playerturn():
     dealer = pick_two(cards)
     dealersum = sum(dealer)
     print(f"Dealer: {dealer[0]}")
-
+    if 1 and 10 in player:
+        print("Congrats you win. Blackjack!")
+        if 1 and 10 in dealer:
+            print("Dealer too...")
+        return
     while True:
         choice = input(f"You have {playersum}, hit or stay? type y for hit, n for stay")
         if choice == "y":
