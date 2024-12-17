@@ -5,6 +5,7 @@ import random
 #     9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
 # ]
 cards = [1,10]
+#test
 def pick_two(cards):
     return random.sample(cards, 2)
 
